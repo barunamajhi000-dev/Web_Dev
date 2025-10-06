@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form>
+    <h1>University Registration Form</h1>
+    <p>Please fill out the form below to register.</p>
+    <hr>
+    <!-- <h2>Personal Details</h2> -->
+    <fieldset>
+        <legend>Personal Details</legend>
+    <label for="firstname">First Name : </label>
+    <input type="text" id="firstname" name="First_Name" placeholder="Enter Your firstname">
+    <br>
+    <br>
+    <label for="lastname">Last Name : </label>
+    <input type="text" id="lastname" name="Last_Name" placeholder="Enter Your lastname">
+    <br>
+    <br>
+    <label for="dob">Date of Birth : </label>
+    <input type="date" id="dob" name="DOB">
+    <br>
+    <br>
+    <label >Gender : </label>
+    <input type="radio" id="gender" name="Gender" value="Male">
+    <label for="gender">Male</label>
+    <input type="radio" id="gender" name="Gender" value="Female">
+    <label for="gender">Female</label>
+    <input type="radio" id="gender" name="Gender" value="Others">
+    <label for="gender">Others</label>
+
+<br>
+<br>
+    <label >Upload Your Photo </label>
+    <input type="file" name="Profile_photo">
+    <br><br>
+    </fieldset>
+
+    <!-- <h2>Contact Information</h2> -->
+     <fieldset> 
+        <legend>Contact Information</legend>
+         <label for="email">Email Address : </label>
+         <input type="email" id="email" name="Email">
+         <br><br>
+          <label for="Phone Number">Phone Number : </label>
+          <input type="number" id="Phone Number" value="Phone_no">
+          <br><br>
+          <label  for="Mail address"> Mailing Address : </label>
+          <textarea id="Mail address" row="120" cols="100">
+           
+         </textarea>
+     </fieldset>
+     <fieldset>
+        <legend>Academic Information</legend>
+         <label for="course">Select Your Course : </label>
+         <select id="course" name="course" >
+            <option value="Science">Science</option>
+            <option value="Arts">Arts</option>
+            <option value="Commerce">Commerce</option>
+            <option value="Others">Others</option>
+         </select>
+         <br><br>
+         <label > ExtraCurricular Interests : </label>
+         <input type="checkbox" value="Sports" id="Interests">
+         <label for="Interests">Sports</label>
+         <input type="checkbox" value="Music and Arts" id="Interests">
+         <label for="Interests">Music and Arts</label>
+         <input type="checkbox" value="Technology" id="Interests">
+         <label for="Interests">Technology</label>
+    
+         <br> <br>
+     </fieldset>
+     <!-- <h2>
+        Academic Information
+     </h2> -->
+     <hr>
+     <fieldset>
+        <legend>Create Your Account</legend>
+         <label for="pass" > Create a Password : </label>
+         <input type="password" id="pass" name="Profile_pass">
+         <br><br>
+         <label for="sec_que">Security Question : </label>
+         <select name="security_que" id="sec_que">
+            <option value="">What was Your pet's name ?</option>
+            <option value="Doggy"> Doggy </option>
+            <option value="kalu">Kalu</option>
+            <option value="juski">dogi</option>
+         </select>
+         <br>
+         <input id="checkb" type="checkbox">
+         <label for="checkb">I agree to the Terms and Conditions.</label>
+         <br><br>
+     </fieldset>
+     <!-- <h2>Creat Your Account</h2> -->
+
+     <hr>
+     <button type="submit">Submit</button>
+     <button type="clear">Clear Form</button>
+</form>
+
+</body>
+</html>
