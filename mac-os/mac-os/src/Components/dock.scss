@@ -1,0 +1,30 @@
+.dock{
+    display: flex;
+    gap : 1.7rem;
+    position: absolute;
+    bottom: 0.4rem;
+    left: 50%;
+    transform: translatex(-50%);
+    background-color: rgb(59, 57, 57);
+    padding-inline: 1.2rem;
+    padding-block: 0.90rem;
+    border-radius: 0.75rem;
+    backdrop-filter:blur(15px);
+}
+.icon{
+    border-radius: 0.55rem;
+    padding: 0.95rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1/1;
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    width: 20px;
+    height: 20px;
+}
+.icon:hover{
+    transform: scale(1.35) translateY(-20%);
+}
+.icon:hover + .icon , .icon:has(+ .icon:hover){
+    transform: scale(1.1 )translateY(-10%);
+}
