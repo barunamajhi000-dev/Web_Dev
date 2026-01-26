@@ -1,6 +1,5 @@
 .window{
-    height: 450px;
-    width: 550px;
+    height: 100%;
     background-color: black;
     border-radius: 10px;
     overflow: hidden;
@@ -20,6 +19,7 @@
         .dots{
             display: flex;
             gap: 0.3rem;
+            cursor: pointer;
 
         .dot{
             height: 15px;
@@ -40,5 +40,8 @@
         }
       
        
+    }
+    .main-content{
+        height: 100%;
     }
 }

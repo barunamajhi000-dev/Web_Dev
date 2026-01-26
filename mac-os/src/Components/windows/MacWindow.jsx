@@ -2,15 +2,33 @@ import React from "react";
 import { Rnd } from "react-rnd";
 import "./window.scss";
 
-const MacWindow = ({ children }) => {
+const MacWindow = ({
+  children,
+  width = "40vw",
+  height = "40vh",
+  windowName,
+  setWindowState,
+}) => {
   return (
-    <Rnd>
+    <Rnd
+      default={{
+        width: width,
+        height: height,
+        x: 300,
+        y: 200,
+      }}
+    >
       <div className="window">
         <div className="nav">
           <div className="dots">
             <div className="dot yellow"></div>
             <div className="dot green"></div>
-            <div className="dot red"></div>
+            <div
+              onClick={() =>
+                setWindowState((state) => ({ ...state, [windowName]: false }))
+              }
+              className="dot red"
+            ></div>
           </div>
           <div className="title">
             <p>barunaM~nitro</p>
